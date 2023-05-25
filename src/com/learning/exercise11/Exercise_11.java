@@ -13,14 +13,14 @@ public class Exercise_11 {
         String exit;
 
         System.out.println("Type the first number: ");
-        firstNumber = input.nextInt();
+        firstNumber = Integer.parseInt(input.nextLine());
         System.out.println("Type the second number: ");
-        secondNumber = input.nextInt();
+        secondNumber = Integer.parseInt(input.nextLine());
         logic = false;
 
         do{
             showMenu();
-            choice = input.nextInt();
+            choice =Integer.parseInt(input.nextLine());
 
             switch (choice){
 
@@ -42,7 +42,7 @@ public class Exercise_11 {
 
                 case 5:
                     System.out.println("Are you sure you want to exit (S/N): ");
-                    exit = input.next();
+                    exit = input.nextLine();
 
                     if(exit.equalsIgnoreCase("s")){
                     logic = true;
